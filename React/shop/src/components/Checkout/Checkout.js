@@ -1,6 +1,6 @@
-import classes from './Product.module.css';
+import classes from './Checkout.module.css';
 
-const Product = (props) => {
+const Checkout = (props) => {
     return (
         <div className={classes.mainContainer}>
             <div className={classes.container}>
@@ -13,14 +13,18 @@ const Product = (props) => {
                     <h2>{props.title}</h2>
                 </div>
                 <div className={classes.column}>
-                    <h2 style={{marginLeft:'1rem'}}>${props.price}</h2>
+                    <h2 style={{marginLeft:'2rem'}}>${props.price}</h2>
+                </div>
+                <div className={classes.column}>
+                    <h2 style={{marginLeft:'2rem'}}>X{props.count}</h2>
                 </div>
             </div>
             <div className={classes.column}>
-                <button onClick={props.addToCheckoutHandler} style={{padding:'0.4rem 1rem', marginRight:'0.5rem'}}>Add Checkout</button>
+            <button onClick={props.removeFromCheckoutHandler} style={{padding:'0.4rem 1rem', marginRight:'0.5rem'}}>Remove</button>
             </div>
         </div>
+        
     );
 }
 
-export default Product;
+export default Checkout;

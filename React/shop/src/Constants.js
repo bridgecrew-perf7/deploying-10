@@ -1,12 +1,14 @@
 const prod = {
     url:{
-        productsApi: 'https://myshop-311923.wn.r.appspot.com/product'
+        productsApi: 'https://reactnodeexample.wn.r.appspot.com/product', 
+        checkoutApi: 'https://checkout-dot-myshop-311923.wn.r.appspot.com'
     }
 }
 
 const dev = {
     url:{
-        productsApi: 'http://localhost:8080/product'
+        productsApi: 'http://localhost:8080/product',
+        checkoutApi: ''
     }
 }
 
